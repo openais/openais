@@ -17,6 +17,10 @@ public enum NavigationStatus {
 
 	MOORED(5),
 
+	// TODO: complete the items to number 14
+	// TODO: refer to
+	// http://catb.org/gpsd/AIVDM.html#_types_1_2_and_3_position_report_class_a
+
 	NOT_DEFINED();
 
 	private final int value;
@@ -38,6 +42,7 @@ public enum NavigationStatus {
 		map.put(3, RESTRICTED_MANEUVERABILITY);
 		map.put(4, CONSTRAINED_BY_HER_DRAUGHT);
 		map.put(5, MOORED);
+		// TODO: complete the items to number 14
 		final NavigationStatus navigationStatus = map.get(value);
 		if (navigationStatus == null) {
 			return NOT_DEFINED;
